@@ -10,13 +10,13 @@
     $(document).ready(function(){
         for(i = 0; i <= 1; i++) {
             $.getJSON("bigassopper.github.io/item"+ i + ".json", function (data) {
-                document.write("Name:" + "" + data.ItemName + "<br>");
-                document.write("ID:" + "" + data.ItemID + "<br>");
-                document.write("Tier:" + "" + data.Tier + "<br>");
-                document.write("Description:" + "" + data.Description + "<br>");
+                document.write("Name:" + " " + data.ItemName + "<br>");
+                document.write("ID:" + " " + data.ItemID + "<br>");
+                document.write("Tier:" + " " + data.Tier + "<br>");
+                document.write("Description:" + " " + data.Description + "<br>");
                 if(data.Stats !== null) document.write("Stats:" + "" + data.Stats + "<br>");
-                document.write("StatsMultiplier:" + "" + data.StatsMultiplier + "<br>");
-                document.write("Description of the values:" + "" + data.DescriptionValues + "<br>");
+                document.write("StatsMultiplier:" + " " + data.StatsMultiplier.toFixed(2) + "<br>");
+                document.write("Description of the values:" + " " + data.DescriptionValues + "<br>");
                 document.write("<br>");
             }).fail(function () {
                 console.log("An error has occurred.");
