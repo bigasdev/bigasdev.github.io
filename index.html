@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>jQuery Loading Local JSON File</title>
+<title>Crystal Seeker's items</title>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head> 
 <body>
@@ -10,15 +10,13 @@
     $(document).ready(function(){
         for(i = 0; i <= 1; i++) {    
             $.getJSON("bigassopper.github.io/item"+ i + ".json", function (data) {
-                var statsMultiplier = data.StatsMultiplier;
-                var statsFixed = statsMultiplier.toFixed(2);
 
                 document.write("Name:" + " " + data.ItemName + "<br>");
                 document.write("ID:" + " " + data.ItemID + "<br>");
                 document.write("Tier:" + " " + data.Tier + "<br>");
                 document.write("Description:" + " " + data.Description + "<br>");
                 if(data.Stats !== null) document.write("Stats:" + "" + data.Stats + "<br>");
-                document.write("StatsMultiplier:" + " " + statsFixed + "<br>");
+                document.write("StatsMultiplier:" + " " + Number(data.StatsMultiplier).toFixed(2) + "<br>");
                 document.write("Description of the values:" + " " + data.DescriptionValues + "<br>");
                 document.write("<br>");
             }).fail(function () {
