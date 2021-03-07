@@ -1,7 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Loading Local JSON File</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head> 
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <script>
+    $(document).ready(function(){
+        for(i = 0; i <= 1; i++) {
+            $.getJSON("Planilhas-Items/item"+ i + ".json", function (data) {
+                document.write(data.ItemName + "<br>");
+                document.write(data.ItemID);
+            }).fail(function () {
+                console.log("An error has occurred.");
+            });
+        }
+    });
+    </script> 
 </body>
 </html>
