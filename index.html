@@ -11,7 +11,12 @@
         for(i = 0; i <= 1; i++) {
             $.getJSON("bigassopper.github.io/item"+ i + ".json", function (data) {
                 document.write(data.ItemName + "<br>");
-                document.write(data.ItemID);
+                document.write(data.ItemID + "<br>");
+                document.write(data.Tier + "<br>");
+                document.write(data.Description + "<br>");
+                document.write(data.Stats + "<br>");
+                document.write(data.StatsMultiplier + "<br>");
+                document.write(data.DescriptionValues + "<br>");
             }).fail(function () {
                 console.log("An error has occurred.");
             });
