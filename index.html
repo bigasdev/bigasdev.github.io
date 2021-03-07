@@ -14,9 +14,10 @@
                 document.write(data.ItemID + "<br>");
                 document.write(data.Tier + "<br>");
                 document.write(data.Description + "<br>");
-                document.write(data.Stats + "<br>");
+                if(data.Stats !== null) document.write(data.Stats + "<br>");
                 document.write(data.StatsMultiplier + "<br>");
                 document.write(data.DescriptionValues + "<br>");
+                document.write("<br>");
             }).fail(function () {
                 console.log("An error has occurred.");
             });
