@@ -1,29 +1,133 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Crystal Seekers items</title>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head> 
-<body>
-    <script>
-    $(document).ready(function(){
-        for(i = 0; i <= 1; i++) {    
-            $.getJSON("bigassopper.github.io/item"+ i + ".json", function (data) {
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-                document.write("Name:" + " " + data.ItemName + "<br>");
-                document.write("ID:" + " " + data.ItemID + "<br>");
-                document.write("Tier:" + " " + data.Tier + "<br>");
-                document.write("Description:" + " " + data.Description + "<br>");
-                if(data.Stats !== null) document.write("Stats:" + "" + data.Stats + "<br>");
-                document.write("StatsMultiplier:" + " " + Number(data.StatsMultiplier).toFixed(2) + "<br>");
-                document.write("Description of the values:" + " " + data.DescriptionValues + "<br>");
-                document.write("<br>");
-            }).fail(function () {
-                console.log("An error has occurred.");
-            });
-        }
-    });
-    </script> 
-</body>
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="totalEggscape.html">Total Eggscape</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<header>
+								<h1>Gustavo Domingues - Game Developer and programmer</h1>
+							</header>
+							<section class="tiles">
+								<article class="style2">
+									<span class="image">
+										<img src="images/eggscapeHeader.jpg" alt="" />
+									</span>
+									<a href="totalEggscape.html">
+										<h2>Total Eggscape</h2>
+										<div class="content">
+											<p>How far can you go using eggs as a tower?</p>
+										</div>
+									</a>
+								</article>
+								<article class="style4">
+									<span class="image">
+										<img src="images/trashedHeader.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Trashed</h2>
+										<div class="content">
+											<p>Ever wanted to manage some garbage in the outer space?</p>
+										</div>
+									</a>
+								</article>
+								<article class="style5">
+									<span class="image">
+										<img src="images/naruHeader.jpg" alt="" />
+									</span>
+									<a href="generic.html">
+										<h2>Naru</h2>
+										<div class="content">
+											<p>Be prepared to an amazing roguelike adventure with survival aspects.</p>
+										</div>
+									</a>
+								</article>
+							</section>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Bigasdev. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
