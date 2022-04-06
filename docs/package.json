@@ -1,0 +1,19 @@
+{
+  "name": "y",
+  "version": "0.0.1",
+  "description": "portfolio documentation",
+  "main": "index.js",
+  "authors": {
+    "name": "Bigasdev",
+    "email": "bigasgamedev@gmail.com"
+  },
+  "repository": "bigasdev.github.io/y",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "docs:build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
