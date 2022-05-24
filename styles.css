@@ -9,6 +9,15 @@ body {
 
     margin:auto;
 }
+hr.collum {
+    display:block;
+    border:0px;
+    height:10px;
+    width:270px;
+    color:#f3d88d;
+    border-top: 3px double #fcc632;
+    overflow: visible;
+}
 h1 {
     font-family: "Lato", sans-serif;
     font-style: normal;
@@ -69,7 +78,7 @@ p{
     font-size: 11px;
     width:75px;
     height:30px;
-    background-color:#b09db1;
+    background-color:#fcc632;
     color :rgb(0, 0, 0);
 }
 .buttonLarge {
@@ -83,18 +92,17 @@ p{
     font-weight: bold;
     width:150px;
     height:40px;
-    background-color:#b09db1;
+    background-color:#fcc632;
     color :rgb(0, 0, 0);
+    padding: 3px;
 }
 .buttonLarge:hover{
     cursor: pointer;
+    border:1px solid #ffffff;
 }
 .button:hover{
     cursor: pointer;
-    filter:drop-shadow(0 0 0.15rem #ffaf1054);
-}
-.button:active{
-    filter:drop-shadow(0 0 0.25rem #f7b32c70);
+    border:1px solid #ffffff;
 }
 .footer {
     font-family: "Lato", sans-serif;
@@ -113,10 +121,14 @@ p{
     width: 560px;
     height: 40px;
     padding: 2px;
-    background: #b09db1;
+    background: #fcc632;
     display:block;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
+}
+.game-tab{
+    align-items: center;
     justify-content: center;
 }
 .gameBoxTitle{
@@ -124,6 +136,7 @@ p{
     width: 250px;
     height: 250px;
     padding: 2px;
+    border: solid 1px transparent;
     filter:drop-shadow(0 0 0.95rem #000000b0);
     display:inline-block;
     margin-left: auto;
@@ -136,7 +149,7 @@ p{
     width: 250px;
     height: 250px;
     padding: 2px;
-    border: 1px solid #b09db1;
+    border: 1px solid #fcc632;
     filter:drop-shadow(0 0 0.95rem #000000b0);
     display:inline-block;
     margin-left: auto;
@@ -146,12 +159,13 @@ p{
 }
 .gameBoxTitle:hover{
     cursor: pointer;
-    border: 1px solid #b09db1;
+    border: 1px solid #fcc632;
 }
 .miniBoxTitle{
     width: 125px;
     height: 125px;
     padding: 0px;
+    border: solid 1px transparent;
     filter:drop-shadow(0 0 0.65rem #000000b0);
     display:block;
     justify-content: center;
@@ -161,7 +175,7 @@ p{
     width: 125px;
     height: 125px;
     padding: 0px;
-    border: 1px solid #b09db1;
+    border: 1px solid #fcc632;
     filter:drop-shadow(0 0 0.65rem #000000b0);
     display:inline-block;
     margin-left: auto;
@@ -214,7 +228,7 @@ p{
 }
 .miniBoxTitle:hover{
     cursor: pointer;
-    border: 1px solid #b09db1;
+    border: 1px solid #fcc632;
 }
 .miniBoxBorderOverlay{
     width: 125px;
