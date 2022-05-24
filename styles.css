@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+body {
+    background-color: #1e2228;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: 100%;
+
+    margin:auto;
+}
+h1 {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 0px;
+}
+p{
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+}
+.topBar{
+    position: relative;
+    top: -40px;
+}
+.smallButton_twitter {
+    position: relative;
+    right: 215px;
+    top: 21px;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    filter:drop-shadow(0 0 0.95rem #000000b0);
+}
+.smallButton_github {
+    position: relative;
+    right: -215px;
+    top: 21px;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    filter:drop-shadow(0 0 0.95rem #000000b0);
+}
+.smallButton:hover{
+    cursor: pointer;
+    filter:drop-shadow(0 0 0.15rem rgba(255, 255, 255, 0.329));
+}
+.smallButton:active{
+    filter:drop-shadow(0 0 0.45rem #00000070);
+}
+.logo {
+    image-rendering: crisp-edges;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+    filter:drop-shadow(0 0 0.95rem #000000b0);
+}
+.button {
+    font-family: "Lato", sans-serif;
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    width:75px;
+    height:30px;
+    background-color:#b09db1;
+    color :rgb(0, 0, 0);
+}
+.buttonLarge {
+    font-family: "Lato", sans-serif;
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    width:150px;
+    height:40px;
+    background-color:#b09db1;
+    color :rgb(0, 0, 0);
+}
+.buttonLarge:hover{
+    cursor: pointer;
+}
+.button:hover{
+    cursor: pointer;
+    filter:drop-shadow(0 0 0.15rem #ffaf1054);
+}
+.button:active{
+    filter:drop-shadow(0 0 0.25rem #f7b32c70);
+}
+.footer {
+    font-family: "Lato", sans-serif;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #192b46;
+    color: rgb(79, 95, 121);
+    text-align: center;
+    border:1px solid #425c83;
+}
+.littlebox {
+    font-family: "Lato", sans-serif;
+    margin: 15px auto 0 auto;
+    width: 560px;
+    height: 40px;
+    padding: 2px;
+    background: #b09db1;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+.gameBoxTitle{
+    margin: 15px auto 0 auto;
+    width: 250px;
+    height: 250px;
+    padding: 2px;
+    filter:drop-shadow(0 0 0.95rem #000000b0);
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+.gameBoxTitleBorder{
+    margin: 15px auto 0 auto;
+    width: 250px;
+    height: 250px;
+    padding: 2px;
+    border: 1px solid #b09db1;
+    filter:drop-shadow(0 0 0.95rem #000000b0);
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+.gameBoxTitle:hover{
+    cursor: pointer;
+    border: 1px solid #b09db1;
+}
+.miniBoxTitle{
+    width: 125px;
+    height: 125px;
+    padding: 0px;
+    filter:drop-shadow(0 0 0.65rem #000000b0);
+    display:block;
+    justify-content: center;
+    align-items: center;
+}
+.miniBoxTitleBorder{
+    width: 125px;
+    height: 125px;
+    padding: 0px;
+    border: 1px solid #b09db1;
+    filter:drop-shadow(0 0 0.65rem #000000b0);
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: bottom;
+    justify-content: center;
+    align-items: center;
+}
+.img__wrap{
+    padding: 0px;
+    margin: 15px auto 0 auto;
+    position: relative;
+    display: inline-block;
+    width:125px;
+    height:125px;
+}
+.img__img{
+    vertical-align: bottom;
+}
+.img__description_layer {
+    position: absolute;
+    top: 8;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+}
+.img__wrap:hover .img__description_layer {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.img__description {
+    transition: .2s;
+    transform: translateY(1em);
+    text-align: center;
+}
+  
+.img__wrap:hover .img__description {
+    transform: translateY(0);
+}
+.miniBoxTitle:hover{
+    cursor: pointer;
+    border: 1px solid #b09db1;
+}
+.miniBoxBorderOverlay{
+    width: 125px;
+    height: 125px;
+    left:738px;
+    top:560px;
+    position: absolute;
+    padding: 2px;
+    border: 2px solid #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+.miniBoxBorderTitle{
+    font-family: "Lato", sans-serif;
+    width: 125px;
+    height: 30px;
+    position: absolute;
+    background: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+.videoBox{
+    width: 720px;
+    height: 415px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding:30px;
+}
+.gamePageBox{
+    background-color: #12151a;
+    margin: auto;
+    padding: 20px;
+    width: 800px;
+}
+.gamePageTitle{
+    text-align: left;
+    margin-left: 5%;
+    font-family: "Lato", sans-serif;
+    font-size: 25px;
+    color: #fcc632;
+    padding:1px;
+}
+.gamePageDescriptionTitle{
+    margin-left: 5%;
+    text-align: left;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    color: #f3d88d;
+    padding:4px;
+}
+.gamePageDescription{
+    display: inline-block;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    color: #d6d6d6;
+}
+.gameDescription{
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+}
+.gameFeaturesTitle{
+    font-family: "Lato", sans-serif;
+    font-size: 25px;
+    color: #fcc632;
+    padding:3px;
+}
+.gameFeaturesBig{
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    padding:2px;
+}
+.gameScreenshotsTitle{
+    font-family: "Lato", sans-serif;
+    font-size: 25px;
+    color: #fcc632;
+    padding:3px;
+}
+.gameFeatures{
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #858585;
+    padding:1px;
+}
+.gameDescriptionBody{
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    color: #a5a5a5;
+    padding:5px;
+}
+.collums{
+    margin: auto;
+    justify-content: center;
+    image-rendering: crisp-edges;
+    align-items: center;
+    padding:20px;
+}
+.screenShot{
+    width: 125px;
+    height: 125px;
+    padding: 0px;
+    filter:drop-shadow(0 0 0.65rem #000000b0);
+    display:block;
+    justify-content: center;
+}
+.featureCollums{
+    margin:1rem auto;
+    width:min(90%,25rem);
+    display:grid;
+    grid-template-columns: 50%50%;
+}
+.featureScreenshots{
+    margin:12rem auto;
+    width:min(90%,125rem);
+    display:grid;
+    grid-template-columns: auto;
+}

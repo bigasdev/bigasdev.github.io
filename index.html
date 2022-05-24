@@ -1,135 +1,63 @@
-<!DOCTYPE HTML>
-<!--
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <img src ="Art/newbanner.png" alt="Logo" class="logo" id="logo">
+    <div style="text-align:center;" class="topBar">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=plastic&logo=twitter&logoColor=white" alt="" class="smallButton_twitter" id="twitterButton">
+    <button class="button" onclick="location.href='index.html';" value="go to home">GAMES</button>
+    <button class="button">PROJECTS</button>
+    <button class="button">TOOLS</button>
+    <button class="button">ARTICLES</button>
+    <button class="button">ABOUT</button>
+    <img src="https://img.shields.io/badge/Github-FF0000?style=plastic&logo=github&logoColor=white" alt="" class="smallButton_github" id="githubButton">
+    </div>
+    <div class="game-tab">
+        <div style="text-align:center;">
+            <a title = "Total Eggscape" href="Pages/gamePage.html">
+            <img src ="Art/eggscapeHeader.jpg" alt="Game" class="gameBoxTitleBorder">
+            </a>
+            <a title = "Trashed" href="Pages/trashed.html">
+            <img src ="Art/trashedHeader.jpg" alt="Game" class="gameBoxTitle">
+            </a>
+            <img src ="Art/naruHeader.jpg" alt="Game" class="gameBoxTitle">
+            <img src ="Art/courier.png" alt="Game" class="gameBoxTitle">
+        </div>
+        <div class="littlebox">
+            <h1>Game Jams</h1>
+            <p>Games finished for game jams</p> 
+            <div div style="text-align:center;">
+                <div class="img__wrap"> 
+                    <img class="miniBoxTitleBorder" src="Art/towerounlife.png">
+                    <div class="img__description_layer">
+                        <p class="img__description">Tower of unlife</p>
+                    </div>
+                </div>
+                <div class="img__wrap">
+                    <img class="miniBoxTitle" src="Art/minecrawler.jpg"/>
+                    <div class="img__description_layer">
+                        <p class="img__description">Minecrawler</p>
+                    </div>
+                </div>
+                <div class="img__wrap">
+                    <img class="miniBoxTitle" src="Art/drog.png"/>
+                    <div class="img__description_layer">
+                        <p class="img__description">Drog</p>
+                    </div>
+                </div>
+                <div class="img__wrap">
+                    <img class="miniBoxTitle" src="Art/jamTime.png"/>
+                    <div class="img__description_layer">
+                        <p class="img__description">Jam time</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
-
-							<!-- Logo -->
-
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
-
-						</div>
-					</header>
-
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="totalEggscape.html">Total Eggscape!</a></li>
-							<li><a href="trashed.html">Trashed</a></li>
-							<li><a href="drog.html">DrOG</a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<header>
-								<h1>Gustavo Domingues - Game Developer and programmer</h1>
-							</header>
-							<section class="tiles">
-								<article class="style2">
-									<span class="image">
-										<img src="images/eggscapeHeader.jpg" alt="" />
-									</span>
-									<a href="totalEggscape.html">
-										<h2>Total Eggscape</h2>
-										<div class="content">
-											<p>How far can you go using eggs as a tower?</p>
-										</div>
-									</a>
-								</article>
-								<article class="style4">
-									<span class="image">
-										<img src="images/trashedHeader.jpg" alt="" />
-									</span>
-									<a href="trashed.html">
-										<h2>Trashed</h2>
-										<div class="content">
-											<p>Ever wanted to manage some garbage in the outer space?</p>
-										</div>
-									</a>
-								</article>
-								<article class="style5">
-									<span class="image">
-										<img src="images/drogHeader.jpg" alt="" />
-									</span>
-									<a href="drog.html">
-										<h2>DrOG</h2>
-										<div class="content">
-											<p>Dive into the crimes of the night to revenge your veteran.</p>
-										</div>
-									</a>
-								</article>
-							</section>
-						</div>
-					</div>
-					<div id ="main">
-						<div class="inner">
-							<header>
-								<h1 style = "text-align: center;">About me</h1>
-							</header>
-							<div class = "inner">
-								<p style= "text-align:center;"><img src = "images/me.jpeg" style = "width: 320px;height: 320px;"></p>
-								<p></p>
-								<p style= "text-align:center;">
-									Hello! I'm Gustavo Domingues and i'm a <b>Game Developer</b> and <b>Programmer</b> with 1 year+ experience in the industry.
-									<p style= "text-align:center;">
-										I have worked as a indepent developer at my first game <b>Total Eggscape!</b> and since then i've been working with <b>Crescent Moon Games</b>
-										as a Full-Time Unity Developer creating <b>Trashed</b> and a currently unannounced console title for <b>PM Studios.</b>
-									</p>
-									<p style= "text-align:center;">
-										I'm currently working in these titles with <b>Crescent Moon Games</b> and in <b>DrOG</b> as a independent developer, aiming for a release in 2021.
-								</p>
-								<p style= "text-align:center;">
-									I'm always open for opportunity, so if you have one please get in touch with me via email at: <b>bigasgamedev@gmail.com.</b> Thank you! :)
-							</p>
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<section>
-								<h2>Follow and contact me</h2>
-								<ul class="icons">
-									<li><a href="https://twitter.com/bigasdev" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="https://github.com/bigasdev" class="icon solid style2 fa-git"><span class="label">Github</span></a></li>
-								</ul>
-							</section>
-						</div>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			
-
-	</body>
-</html>
+    <script>
+        document.getElementById("twitterButton").addEventListener("click", () => {window.open("https://twitter.com/bigasdev");})
+        document.getElementById("githubButton").addEventListener("click", () => {window.open("https://github.com/bigasdev");})
+    </script>
+</body>
