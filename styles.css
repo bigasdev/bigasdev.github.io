@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
+
+
+/* -- the core for the pages --*/
 
 body {
     background-color: #1e2228;
-    min-height: 100%;
-    min-width: 1024px;
     width: 100%;
     height: 100%;
 
@@ -11,7 +13,7 @@ body {
 }
 hr.collum {
     display:block;
-    border:0px;
+    border:0px;                                      
     height:10px;
     width:270px;
     color:#f3d88d;
@@ -20,19 +22,58 @@ hr.collum {
 }
 h1 {
     font-family: "Lato", sans-serif;
-    font-style: normal;
+    font-style:normal;
     font-size: 18px;
+    color: #fcc632;
     line-height: 0px;
+    padding: 3px;
+}
+h2 {
+    font-family: "Oswald", sans-serif;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 22px;
+    color: #fcc632;
+    line-height: 0px;
+    padding:5px;
 }
 p{
     font-family: "Lato", sans-serif;
-    font-size: 12px;
+    font-size: 16px;
 }
-.topBar{
-    position: relative;
-    top: -40px;
+p.italic{
+    font-style: italic;
 }
-.smallButton_twitter {
+p.white.italic{
+    font-style: italic;
+    color: rgb(204, 204, 204);
+}
+ul{
+    list-style-type:square;
+    padding:1px;
+}
+li.title{
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    color: #fcc632;
+}
+li.title.i{
+    font-family: "Oswald", sans-serif;
+    font-style: italic;
+    font-weight: 200;
+}
+li.italic{
+    font-family: "Oswald", sans-serif;
+    font-style: italic;
+    font-weight: 200;
+    color: rgb(204, 204, 204);
+}
+
+/* ----------------------------------- */
+
+/* -- Components -- */
+
+.smallButton {
     position: relative;
     right: 215px;
     top: 21px;
@@ -42,31 +83,8 @@ p{
     justify-content: center;
     filter:drop-shadow(0 0 0.95rem #000000b0);
 }
-.smallButton_github {
-    position: relative;
+.smallButton.github {
     right: -215px;
-    top: 21px;
-    align-items: center;
-    margin-right: auto;
-    margin-left: auto;
-    justify-content: center;
-    filter:drop-shadow(0 0 0.95rem #000000b0);
-}
-.smallButton:hover{
-    cursor: pointer;
-    filter:drop-shadow(0 0 0.15rem rgba(255, 255, 255, 0.329));
-}
-.smallButton:active{
-    filter:drop-shadow(0 0 0.45rem #00000070);
-}
-.logo {
-    image-rendering: crisp-edges;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: 50%;
-    filter:drop-shadow(0 0 0.95rem #000000b0);
 }
 .button {
     font-family: "Lato", sans-serif;
@@ -81,39 +99,43 @@ p{
     background-color:#fcc632;
     color :rgb(0, 0, 0);
 }
-.buttonLarge {
-    font-family: "Lato", sans-serif;
-    display:inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    align-items: center;
+.button.large {
     font-size: 14px;
     font-weight: bold;
     width:150px;
     height:40px;
-    background-color:#fcc632;
-    color :rgb(0, 0, 0);
     padding: 3px;
-}
-.buttonLarge:hover{
-    cursor: pointer;
-    border:1px solid #ffffff;
 }
 .button:hover{
     cursor: pointer;
     border:1px solid #ffffff;
 }
-.footer {
-    font-family: "Lato", sans-serif;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #192b46;
-    color: rgb(79, 95, 121);
-    text-align: center;
-    border:1px solid #425c83;
+.smallButton:hover{
+    cursor: pointer;
+    filter:drop-shadow(0 0 0.15rem rgba(255, 255, 255, 0.329));
+}
+
+/* ----------------- */
+
+/* -- Index -- */
+
+.topBar{
+    position: relative;
+    top: -40px;
+}
+.logo {
+    image-rendering: crisp-edges;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+    filter:drop-shadow(0 0 0.95rem #000000b0);
+}
+.game-tab{
+    grid-template-columns: repeat(auto-fit, minmax(200px, .25fr));
+    align-items: center;
+    justify-content: center;
 }
 .littlebox {
     font-family: "Lato", sans-serif;
@@ -127,11 +149,7 @@ p{
     margin-right: auto;
     justify-content: center;
 }
-.game-tab{
-    align-items: center;
-    justify-content: center;
-}
-.gameBoxTitle{
+.gameBox{
     margin: 15px auto 0 auto;
     width: 250px;
     height: 250px;
@@ -144,45 +162,21 @@ p{
     justify-content: center;
     align-items: center;
 }
-.gameBoxTitleBorder{
-    margin: 15px auto 0 auto;
-    width: 250px;
-    height: 250px;
-    padding: 2px;
+.gameBox.border{
     border: 1px solid #fcc632;
-    filter:drop-shadow(0 0 0.95rem #000000b0);
-    display:inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    align-items: center;
 }
-.gameBoxTitle:hover{
+.gameBox:hover{
     cursor: pointer;
     border: 1px solid #fcc632;
 }
-.miniBoxTitle{
+.gameBox.little{
     width: 125px;
     height: 125px;
     padding: 0px;
     border: solid 1px transparent;
-    filter:drop-shadow(0 0 0.65rem #000000b0);
-    display:block;
-    justify-content: center;
-    align-items: center;
 }
-.miniBoxTitleBorder{
-    width: 125px;
-    height: 125px;
-    padding: 0px;
+.gameBox.little.border{
     border: 1px solid #fcc632;
-    filter:drop-shadow(0 0 0.65rem #000000b0);
-    display:inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    vertical-align: bottom;
-    justify-content: center;
-    align-items: center;
 }
 .img__wrap{
     padding: 0px;
@@ -226,30 +220,11 @@ p{
 .img__wrap:hover .img__description {
     transform: translateY(0);
 }
-.miniBoxTitle:hover{
-    cursor: pointer;
-    border: 1px solid #fcc632;
-}
-.miniBoxBorderOverlay{
-    width: 125px;
-    height: 125px;
-    left:738px;
-    top:560px;
-    position: absolute;
-    padding: 2px;
-    border: 2px solid #ffffff;
-    justify-content: center;
-    align-items: center;
-}
-.miniBoxBorderTitle{
-    font-family: "Lato", sans-serif;
-    width: 125px;
-    height: 30px;
-    position: absolute;
-    background: #ffffff;
-    justify-content: center;
-    align-items: center;
-}
+
+/* ---------------------------------- */
+
+/* -- Game Page -- */
+
 .videoBox{
     width: 720px;
     height: 415px;
@@ -263,65 +238,6 @@ p{
     margin: auto;
     padding: 20px;
     width: 800px;
-}
-.gamePageTitle{
-    text-align: left;
-    margin-left: 5%;
-    font-family: "Lato", sans-serif;
-    font-size: 25px;
-    color: #fcc632;
-    padding:1px;
-}
-.gamePageDescriptionTitle{
-    margin-left: 5%;
-    text-align: left;
-    font-family: "Lato", sans-serif;
-    font-size: 15px;
-    color: #f3d88d;
-    padding:4px;
-}
-.gamePageDescription{
-    display: inline-block;
-    font-family: "Lato", sans-serif;
-    font-size: 15px;
-    color: #d6d6d6;
-}
-.gameDescription{
-    font-family: "Lato", sans-serif;
-    font-size: 15px;
-    color: #ffffff;
-}
-.gameFeaturesTitle{
-    font-family: "Lato", sans-serif;
-    font-size: 25px;
-    color: #fcc632;
-    padding:3px;
-}
-.gameFeaturesBig{
-    font-family: "Lato", sans-serif;
-    font-size: 13px;
-    font-weight: bold;
-    color: #ffffff;
-    padding:2px;
-}
-.gameScreenshotsTitle{
-    font-family: "Lato", sans-serif;
-    font-size: 25px;
-    color: #fcc632;
-    padding:3px;
-}
-.gameFeatures{
-    font-family: "Lato", sans-serif;
-    font-size: 13px;
-    font-weight: bold;
-    color: #858585;
-    padding:1px;
-}
-.gameDescriptionBody{
-    font-family: "Lato", sans-serif;
-    font-size: 13px;
-    color: #a5a5a5;
-    padding:5px;
 }
 .collums{
     margin: auto;
@@ -350,3 +266,5 @@ p{
     display:grid;
     grid-template-columns: auto;
 }
+
+/* ------------------------------ */

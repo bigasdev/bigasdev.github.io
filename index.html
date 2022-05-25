@@ -5,49 +5,49 @@
 <body>
     <img src ="Art/newbanner.png" alt="Logo" class="logo" id="logo">
     <div style="text-align:center;" class="topBar">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=plastic&logo=twitter&logoColor=white" alt="" class="smallButton_twitter" id="twitterButton">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=plastic&logo=twitter&logoColor=white" alt="" class="smallButton" id="twitterButton">
     <button class="button" onclick="location.href='index.html';" value="go to home">GAMES</button>
-    <button class="button">PROJECTS</button>
+    <button class="button" onclick="location.href='Pages/projects.html';">PROJECTS</button>
     <button class="button">TOOLS</button>
     <button class="button">ARTICLES</button>
     <button class="button">ABOUT</button>
-    <img src="https://img.shields.io/badge/Github-FF0000?style=plastic&logo=github&logoColor=white" alt="" class="smallButton_github" id="githubButton">
+    <img src="https://img.shields.io/badge/Github-FF0000?style=plastic&logo=github&logoColor=white" alt="" class="smallButton github" id="githubButton">
     </div>
     <div class="game-tab">
         <div style="text-align:center;">
             <a title = "Total Eggscape" href="Pages/gamePage.html">
-            <img src ="Art/eggscapeHeader.jpg" alt="Game" class="gameBoxTitleBorder">
+            <img src ="Art/eggscapeHeader.jpg" alt="Game" class="gameBox border">
             </a>
             <a title = "Trashed" href="Pages/trashed.html">
-            <img src ="Art/trashedHeader.jpg" alt="Game" class="gameBoxTitle">
+            <img src ="Art/trashedHeader.jpg" alt="Game" class="gameBox">
             </a>
-            <img src ="Art/naruHeader.jpg" alt="Game" class="gameBoxTitle">
-            <img src ="Art/courier.png" alt="Game" class="gameBoxTitle">
+            <img src ="Art/naruHeader.jpg" alt="Game" class="gameBox">
+            <img src ="Art/courier.png" alt="Game" class="gameBox">
         </div>
         <div class="littlebox">
             <h1>Game Jams</h1>
             <p>Games finished for game jams</p> 
             <div div style="text-align:center;">
                 <div class="img__wrap"> 
-                    <img class="miniBoxTitleBorder" src="Art/towerounlife.png">
+                    <img class="gameBox little border" src="Art/towerounlife.png">
                     <div class="img__description_layer">
                         <p class="img__description">Tower of unlife</p>
                     </div>
                 </div>
                 <div class="img__wrap">
-                    <img class="miniBoxTitle" src="Art/minecrawler.jpg"/>
+                    <img class="gameBox little" src="Art/minecrawler.jpg"/>
                     <div class="img__description_layer">
                         <p class="img__description">Minecrawler</p>
                     </div>
                 </div>
                 <div class="img__wrap">
-                    <img class="miniBoxTitle" src="Art/drog.png"/>
+                    <img class="gameBox little" src="Art/drog.png"/>
                     <div class="img__description_layer">
                         <p class="img__description">Drog</p>
                     </div>
                 </div>
                 <div class="img__wrap">
-                    <img class="miniBoxTitle" src="Art/jamTime.png"/>
+                    <img class="gameBox little" src="Art/jamTime.png"/>
                     <div class="img__description_layer">
                         <p class="img__description">Jam Time</p>
                     </div>
@@ -56,8 +56,6 @@
         </div>
     </div>
 
-    <script>
-        document.getElementById("twitterButton").addEventListener("click", () => {window.open("https://twitter.com/bigasdev");})
-        document.getElementById("githubButton").addEventListener("click", () => {window.open("https://github.com/bigasdev");})
+    <script src="js/mainScript.js">
     </script>
 </body>
