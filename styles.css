@@ -377,3 +377,24 @@ li.italic{
 }
 
 /* ------------------------------ */
+
+/* -- Projects/Tools Page -- */
+
+.projectsToolsPage{
+    display: inline-grid;
+    grid-template-columns: 100%;
+}
+.projectsToolsBox{
+    border:solid 1px #fcc632;
+    background-color: #12151a;
+    width:550px;
+    height:550px;
+}
+.projectsToolsImage{
+    border:solid 1px #fcc632;
+    width: 100px;
+    height: 100px;
+    margin-top: 10%;
+}
+
+/* ------------------------------ */
