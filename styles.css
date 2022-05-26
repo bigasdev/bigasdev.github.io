@@ -37,6 +37,29 @@ h2 {
     line-height: 0px;
     padding:5px;
 }
+h3 {
+    font-family: "Lato", sans-serif;
+    font-style:normal;
+    font-size: 32px;
+    color: #fcc632;
+    line-height: 0px;
+    padding: 3px;
+}
+h3.white{
+    color:#ffffff;
+    padding:0px;
+}
+h3.black{
+    color:#000000;
+    padding:0px;
+}
+h3.italic.white{
+    color:#ffffff;
+    font-family: "Oswald", sans-serif;
+    font-style: italic;
+    font-weight: 200;
+    padding:0px;
+}
 p{
     font-family: "Lato", sans-serif;
     font-size: 16px;
@@ -265,6 +288,62 @@ li.italic{
     width:min(90%,125rem);
     display:grid;
     grid-template-columns: auto;
+}
+
+/* ------------------------------ */
+
+/* -- Projects Page -- */
+
+.projectsCollum{
+    display: inline-grid;
+}
+.projectBox{
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border: solid 1px #fcc632;
+    filter:drop-shadow(0 0 0.95rem #000000b0);
+}
+.projectSidebox{
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border:solid 1px #fcc632;
+    margin-left: 120px;
+    margin-top: -160px;
+    background-color: #12151a;
+    width:450px;
+    height:150px;
+}
+.projectSideboxText{
+    text-indent: 85px;
+    text-align: left;
+    margin-top: 50px;
+}
+.projectSideboxBar{
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-left: 120px;
+    margin-top: -160px;
+    background-color: #fcc632;
+    width: 450px;
+    height: 50px;
+}
+.projectSideboxBarText{
+    text-indent: 85px;
+    text-align: left;
+    margin-top: -8px;
+}
+.projectDatebar{
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-left: 495px;
+    margin-top: -85px;
+    background-color: #fcc632;
+    width: 75px;
+    height: 75px;
 }
 
 /* ------------------------------ */
