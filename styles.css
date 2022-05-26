@@ -304,6 +304,12 @@ li.italic{
     border: solid 1px #fcc632;
     filter:drop-shadow(0 0 0.95rem #000000b0);
 }
+.projectBox:hover{
+    cursor:pointer;
+    width: 205px;
+    height: 205px;
+    border: solid 2px #fcc632;
+}
 .projectSidebox{
     justify-content: center;
     align-content: center;
@@ -344,6 +350,30 @@ li.italic{
     background-color: #fcc632;
     width: 75px;
     height: 75px;
+}
+
+/* ------------------------------ */
+
+/* -- Tools Page -- */
+.toolsCollum{
+    display: grid;
+    grid-template-columns: 33%33%33%;
+}
+
+.toolsBox{
+    margin-left: 45px;
+    border:solid 1px #fcc632;
+    background-color: #12151a;
+    width:550px;
+    height:550px;
+}
+.toolsSideBox{
+    background-color: #fcc632;
+    width: 550px;
+    height: 50px;
+}
+.toolsSideBoxText{
+    margin-top: -55px;
 }
 
 /* ------------------------------ */
