@@ -5,7 +5,8 @@
 /* -- the core for the pages --*/
 
 body {
-    background-color: #1e2228;
+    background: rgb(34,42,53);
+    background: radial-gradient(circle, rgba(34,42,53,1) 0%, rgba(34,34,34,1) 0%, rgba(33,36,41,1) 55%, rgba(0,0,0,1) 100%);
     width: 100%;
     height: 100%;
 
@@ -110,6 +111,8 @@ li.italic{
 
 .smallButton {
     position: relative;
+    width: auto;
+    height: auto;
     right: 215px;
     top: 21px;
     align-items: center;
@@ -131,9 +134,11 @@ li.italic{
     border:0px;
     justify-content: center;
     align-items: center;
-    font-size: 11px;
-    width:75px;
-    height:30px;
+    font-size: .7rem;
+    width: 75px;
+    height: 30px;
+    max-width: 75px;
+    max-height: 30px;
     background-color:#fcc632;
     color :rgb(0, 0, 0);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -157,29 +162,45 @@ li.italic{
 /* ----------------- */
 
 /* -- Index -- */
+.bannerBar{
+    background-color: #1e2228;
+    filter:drop-shadow(0 0 0.95rem #000000b0);
+    position: relative;
+    max-width: 1920px;
+    width: 100%;
+    min-width: 350px;
+}
 
 .topBar{
-    position: relative;
-    top: -40px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
 }
 .logo {
     image-rendering: crisp-edges;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    height: 50%;
+    width: 820px;
     filter:drop-shadow(0 0 0.95rem #000000b0);
 }
 .game-tab{
     grid-template-columns: repeat(auto-fit, minmax(200px, .25fr));
     align-items: center;
     justify-content: center;
+    margin-top: 3rem;
 }
 .littlebox {
     font-family: "Lato", sans-serif;
     margin: 15px auto 0 auto;
-    width: 638px;
+    margin-top: 3rem;
+    width: 34%;
+    min-width: 200px;
     height: 40px;
     padding: 2px;
     background: #fcc632;
@@ -190,16 +211,20 @@ li.italic{
 }
 .gameBox{
     margin: 15px auto 0 auto;
-    width: 250px;
-    height: 250px;
+    image-rendering: crisp-edges;
+    width: 15%;
+    min-width: 85px;
+    height: auto;
+    max-height: 250px;
     padding: 2px;
     border: solid 1px transparent;
-    filter:drop-shadow(0 0 0.95rem #000000b0);
+    filter:drop-shadow(.75rem .75rem .75rem #000000b0);
     display:inline-block;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
     align-items: center;
+    transition: .15s;
 }
 .gameBox.border{
     border: 1px solid #fcc632;
@@ -209,8 +234,12 @@ li.italic{
     border: 1px solid #fcc632;
 }
 .gameBox.little{
-    width: 125px;
-    height: 125px;
+    image-rendering: crisp-edges;
+    width: 100%;
+    min-width: 68px;
+    min-height: 68px;
+    height: auto;
+    max-height: 125px;
     padding: 0px;
     border: solid 1px transparent;
 }
@@ -218,12 +247,16 @@ li.italic{
     border: 1px solid #fcc632;
 }
 .img__wrap{
+    image-rendering: crisp-edges;
     padding: 0px;
     margin-top: -2.5rem;
+    min-width: 88px;
+    min-height: 88px;
     position: relative;
     display: inline-block;
-    width:125px;
-    height:125px;
+    width:19.5%;
+    height:auto;
+    max-height: 125px;
 }
 .img__img{
     vertical-align: bottom;
@@ -288,12 +321,15 @@ li.italic{
     padding:20px;
 }
 .screenShot{
-    width: 125px;
-    height: 125px;
+    max-width: 125px;
+    max-height: 125px;
     padding: 0px;
     filter:drop-shadow(0 0 0.65rem #000000b0);
     display:block;
     justify-content: center;
+}
+.screenShot.border{
+    border: 3px solid #fcc632;
 }
 .featureCollums{
     display: flex;
@@ -432,19 +468,19 @@ li.italic{
     width: 500px;
 }
 .aboutMeProfilePic{
-    position: absolute;
-    margin-left: 350px;
     border: 3px solid #fcc632;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .aboutMeProfilePic.art{
-    position: absolute;
-    margin-top: 310px;
     margin-left: 350px;
 }
 .aboutMeBox.buttons{
     justify-content: left;
     text-align: center;
+}
+.aboutMeTextAndProfile{
+    display: grid;
+    grid-template-columns: 1fr .4fr;
+    gap: 1rem;
 }
 
 /* ------------------------------ */
