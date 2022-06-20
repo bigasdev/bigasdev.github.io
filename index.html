@@ -8,64 +8,46 @@
 </head>
 <body>
     <div class = "bannerBar">
+        <div class ="bannerRepeating">
+        </div>
         <img src ="Art/newbanner.png" alt="Logo" class="logo" id="logo">
         <div style="text-align:center;" class="topBar">
-            <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=plastic&logo=twitter&logoColor=white" alt="" class="smallButton_twitter" id="twitterButton">
-            <button class="button" onclick="location.href='index.html';" value="go to home">GAMES</button>
+            <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=plastic&logo=twitter&logoColor=white" alt="" class="smallButtonBanner" id="twitterButton">
+            <button class="button selected" onclick="location.href='index.html';" value="go to home">GAMES</button>
             <button class="button" onclick="location.href='Pages/projects.html';">PROJECTS</button>
-            <button class="button" onclick="location.href='Pages/tools.html';">TOOLS</button>
-            <button class="button">ARTS</button>
-            <button class="button">ARTICLES</button>
+            <button class="button">ART</button>
             <button class="button" onclick="location.href='Pages/aboutme.html';">ABOUT</button>
-            <img src="https://img.shields.io/badge/Github-FF0000?style=plastic&logo=github&logoColor=white" alt="" class="smallButton_github" id="githubButton">
+            <img src="https://img.shields.io/badge/Github-FF0000?style=plastic&logo=github&logoColor=white" alt="" class="smallButtonBanner" id="githubButton">
         </div>
     </div>
-    <div class="game-tab">
-        <div style="text-align:center;">
-            <a title = "Total Eggscape" href="Pages/gamePage.html">
-            <img src ="Art/eggscapeHeader.jpg" alt="Game" class="gameBox border">
-            </a>
-            <a title = "Trashed" href="Pages/trashed.html">
-            <img src ="Art/trashedHeader.jpg" alt="Game" class="gameBox">
-            </a>
-            <img src ="Art/naruHeader.jpg" alt="Game" class="gameBox">
-            <img src ="Art/courierHeader.jpg" alt="Game" class="gameBox">
+
+        <div class="game-tab">
+            <div style="text-align:center;">
+                <a title = "Total Eggscape" href="Pages/gamePage.html">
+                <img src ="Art/eggscapeHeader.jpg" alt="Game" class="gameBox border">
+                </a>
+                <a title = "Trashed" href="Pages/trashed.html">
+                <img src ="Art/trashedHeader.jpg" alt="Game" class="gameBox">
+                </a>
+                <img src ="Art/naruHeader.jpg" alt="Game" class="gameBox">
+                <img src ="Art/courierHeader.jpg" alt="Game" class="gameBox">
+            </div>
         </div>
-        <div class="littlebox">
-            <h1 class="black">Game Jams</h1>
-            <p class="black">.</p> 
-                <div class="img__wrap"> 
-                    <img class="gameBox little border" src="Art/towerounlife.png">
-                    <div class="img__description_layer">
-                        <p class="img__description">Tower of unlife</p>
-                    </div>
-                </div>
-                <div class="img__wrap">
-                    <img class="gameBox little" src="Art/towerounlife.png"/>
-                    <div class="img__description_layer">
-                        <p class="img__description">Minecrawler</p>
-                    </div>
-                </div>
-                <div class="img__wrap">
-                    <img class="gameBox little" src="Art/towerounlife.png"/>
-                    <div class="img__description_layer">
-                        <p class="img__description">Drog</p>
-                    </div>
-                </div>
-                <div class="img__wrap">
-                    <img class="gameBox little" src="Art/towerounlife.png"/>
-                    <div class="img__description_layer">
-                        <p class="img__description">Jam Time</p>
-                    </div>
-                </div>
-                <div class="img__wrap">
-                    <img class="gameBox little" src="Art/towerounlife.png"/>
-                    <div class="img__description_layer">
-                        <p class="img__description">Jam Time</p>
-                    </div>
-                </div>
-        </div>
+    
+    <div class="littlebox">
+        <h1 class="black">Game Jams</h1>
+            <div class="gameJamGrid">
+                <img src="Art/jamTime.png" class="gameBox little border">
+                <img src="Art/minecrawler.jpg" class="gameBox little noBorder">
+                <img src="Art/minecrawler.jpg" class="gameBox little noBorder">
+                <img src="Art/minecrawler.jpg" class="gameBox little noBorder">
+                <img src="Art/minecrawler.jpg" class="gameBox little noBorder">
+                <img src="Art/minecrawler.jpg" class="gameBox little noBorder">
+                <img src="Art/minecrawler.jpg" class="gameBox little noBorder">
+                <img src="Art/minecrawler.jpg" class="gameBox little noBorder">
+            </div>
     </div>
+    
 
     <script src="js/mainScript.js">
     </script>

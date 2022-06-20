@@ -6,13 +6,16 @@
 
 body {
     background: rgb(34,42,53);
-    background: radial-gradient(circle, rgba(34,42,53,1) 0%, rgba(34,34,34,1) 0%, rgba(33,36,41,1) 55%, rgba(0,0,0,1) 100%);
+    background-image: #484747;
     width: 100%;
     height: 100%;
 
     margin:auto;
 }
 a{
+    border:none;
+}
+a.orange{
     color: #fcc632;
 }
 hr.collum {
@@ -108,6 +111,11 @@ li.italic{
 /* ----------------------------------- */
 
 /* -- Components -- */
+.bigasdev{
+    position: absolute;
+    image-rendering: pixelated;
+    width: 10%;
+}
 
 .smallButton {
     position: relative;
@@ -122,6 +130,13 @@ li.italic{
     filter:drop-shadow(0 0 0.95rem #000000b0);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
+.smallButtonBanner{
+    border: solid 1px transparent;
+}
+.smallButtonBanner:hover{
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
 .smallButton.github {
     right: -215px;
 }
@@ -135,16 +150,21 @@ li.italic{
     justify-content: center;
     align-items: center;
     font-size: .7rem;
-    width: 75px;
+    width: 15%;
     height: 30px;
     max-width: 75px;
     max-height: 30px;
     background-color:#fcc632;
     color :rgb(0, 0, 0);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    
+}
+.button.selected{
+    background-color:#fcd66f;
+    border: 1px solid #ffff;
 }
 .button.large {
-    font-size: 14px;
+    font-size: .7rem;
     font-weight: bold;
     width:150px;
     height:40px;
@@ -158,17 +178,30 @@ li.italic{
     cursor: pointer;
     filter:drop-shadow(0 0 0.15rem rgba(255, 255, 255, 0.329));
 }
+.smallButton.github:hover{
+    cursor: pointer;
+}
 
 /* ----------------- */
 
 /* -- Index -- */
 .bannerBar{
     background-color: #1e2228;
-    filter:drop-shadow(0 0 0.95rem #000000b0);
+    filter:drop-shadow(0 1.5rem 1.95rem #000000b0);
     position: relative;
     max-width: 1920px;
     width: 100%;
-    min-width: 350px;
+    min-width: 150px;
+}
+.bannerRepeating{
+    position: absolute;
+    top:3.3rem;
+    left:0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: url('Art/bannerrepeat.png');
+    background-repeat: repeat-x;
 }
 
 .topBar{
@@ -182,13 +215,22 @@ li.italic{
     text-align: center;
 }
 .logo {
-    image-rendering: crisp-edges;
-    display: flex;
+    image-rendering: pixelated;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 820px;
+    min-width: 320px;
     filter:drop-shadow(0 0 0.95rem #000000b0);
+    background-repeat: no-repeat;
+    background-position: center center;
 }
+
+.game-tab-box{
+    background-color: #12151a;
+    border-radius: 15px;
+}
+
 .game-tab{
     grid-template-columns: repeat(auto-fit, minmax(200px, .25fr));
     align-items: center;
@@ -199,14 +241,11 @@ li.italic{
     font-family: "Lato", sans-serif;
     margin: 15px auto 0 auto;
     margin-top: 3rem;
-    width: 34%;
+    width: 49.6%;
     min-width: 200px;
     height: 40px;
-    padding: 2px;
+    padding: 5px;
     background: #fcc632;
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
     justify-content: center;
 }
 .gameBox{
@@ -214,8 +253,7 @@ li.italic{
     image-rendering: crisp-edges;
     width: 15%;
     min-width: 85px;
-    height: auto;
-    max-height: 250px;
+    height: 25%;
     padding: 2px;
     border: solid 1px transparent;
     filter:drop-shadow(.75rem .75rem .75rem #000000b0);
@@ -228,69 +266,42 @@ li.italic{
 }
 .gameBox.border{
     border: 1px solid #fcc632;
+    z-index: 2;
+    box-shadow: 0px 6px 16px rgb(0 0 0 / 80%);
 }
 .gameBox:hover{
     cursor: pointer;
     border: 1px solid #fcc632;
 }
 .gameBox.little{
+    margin: 0;
     image-rendering: crisp-edges;
-    width: 100%;
-    min-width: 68px;
-    min-height: 68px;
-    height: auto;
-    max-height: 125px;
+    width: 15%;
+    height: 25%;
     padding: 0px;
     border: solid 1px transparent;
 }
-.gameBox.little.border{
+.gameBox.little:hover{
     border: 1px solid #fcc632;
 }
-.img__wrap{
-    image-rendering: crisp-edges;
-    padding: 0px;
-    margin-top: -2.5rem;
-    min-width: 88px;
-    min-height: 88px;
-    position: relative;
-    display: inline-block;
-    width:19.5%;
-    height:auto;
-    max-height: 125px;
+.gameBox.little.noBorder{
+    width: 15%;
+    min-width: 185px;
+    min-height: 185px;
+    height: auto;
 }
-.img__img{
-    vertical-align: bottom;
+.gameBox.little.border{
+    border: 1px solid #fcc632;
+    width: 15%;
+    min-width: 185px;
+    min-height: 185px;
+    height: auto;
 }
-.img__description_layer {
-    position: absolute;
-    top: 8;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    visibility: hidden;
-    opacity: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    /* transition effect. not necessary */
-    transition: opacity .2s, visibility .2s;
-}
-.img__wrap:hover .img__description_layer {
-    visibility: visible;
-    opacity: 1;
-}
-  
-.img__description {
-    transition: .2s;
-    transform: translateY(1em);
-    text-align: center;
-}
-  
-.img__wrap:hover .img__description {
-    transform: translateY(0);
+.gameJamGrid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 1.65rem;
+    margin-left: -.27rem;
 }
 
 /* ---------------------------------- */
@@ -467,6 +478,7 @@ li.italic{
     padding: 20px;
     width: 500px;
 }
+
 .aboutMeProfilePic{
     border: 3px solid #fcc632;
 }
