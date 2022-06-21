@@ -189,12 +189,10 @@ li.italic{
 .bannerBar{
     display: block  ;
     background: rgb(34,42,53);
-    background: linear-gradient(0deg, rgba(34,42,53,1) 0%, rgba(5,59,22,1) 0%, rgba(62,74,125,1) 97%);
+    background: linear-gradient(0deg, rgba(34,42,53,1) 0%, rgba(5,59,22,1) 0%, rgba(62,74,125,1) 100%);
     filter:drop-shadow(0 1.5rem 1.95rem #000000b0);
     position: relative;
     max-width: 3920px;
-    width: 100%;
-    min-width: 620px;
 }
 .bannerRepeating{
     position: absolute;
@@ -230,7 +228,7 @@ li.italic{
     z-index: 999;
     background-position: center center;
 }
-@media (max-width: 450px){
+@media (max-width: 420px){
     
     .logo{margin-left: -12rem;}
 }
