@@ -186,7 +186,8 @@ li.italic{
 
 /* -- Index -- */
 .bannerBar{
-    background-color: #3b0f37;
+    background: rgb(34,42,53);
+    background: linear-gradient(0deg, rgba(34,42,53,1) 0%, rgba(5,59,22,1) 0%, rgba(62,74,125,1) 97%);
     filter:drop-shadow(0 1.5rem 1.95rem #000000b0);
     position: relative;
     max-width: 1920px;
@@ -202,6 +203,7 @@ li.italic{
     text-align: center;
     background: url('Art/bannerrepeat.png');
     background-repeat: repeat-x;
+    z-index: -1;
 }
 
 .topBar{
@@ -221,6 +223,7 @@ li.italic{
     margin-right: auto;
     width: 820px;
     background-repeat: no-repeat;
+    z-index: 999;
     background-position: center center;
 }
 
