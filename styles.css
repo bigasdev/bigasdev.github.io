@@ -47,6 +47,11 @@ h2 {
     line-height: 0px;
     padding:5px;
 }
+@media (max-width:768px){
+    h2{
+        font-size: 16px;
+    }
+}
 h3 {
     font-family: "Lato", sans-serif;
     font-style:normal;
@@ -594,7 +599,14 @@ li.italic{
 }
 @media (max-width:768px){
     .popup-image img{
-        width: 95%;
+        top: 35%;
+        left: 35%;
+    }
+    .popup-image button{
+        right: 245px;
+    }
+    .popup-image span{
+        right: 260px;
     }
 }
 
