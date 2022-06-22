@@ -311,53 +311,63 @@ li.italic{
     height: 100%;
     object-fit: cover;
 }
+.gamejam-grid-block div{
+    position: absolute;
+    width: 105px;
+    height: 25px;
+    background-color: #00cdf9;
+    text-align: center;
+    display: none;
+}
+.gamejam-grid-block h2{
+    margin-top: .3rem;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+.gamejam-grid-block:hover div{
+    display: block;
+}
+
+
 
 
 /* ---------------------------------- */
 
 /* -- Game Page -- */
-
-.videoBox{
-    width: 720px;
-    height: 415px;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    padding:30px;
-}
 .gamePageBox{
     background-color: #12151a;
     border-radius: 15px;
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 3rem;
     padding: 20px;
-    width: 800px;
+    width: 55%;
+    min-width: 400px;
+    max-width: 800px;
 }
-.collums{
-    margin: auto;
-    justify-content: center;
-    image-rendering: crisp-edges;
-    align-items: center;
-    padding:20px;
+.gamepage-header{
+    position: relative;
+    text-align: center;
+    top:0px; right:0px; left:0px; bottom:0px;
 }
-.screenShot{
-    max-width: 125px;
-    max-height: 125px;
-    padding: 0px;
-    filter:drop-shadow(0 0 0.65rem #000000b0);
-    display:block;
-    justify-content: center;
+.gamepage-header h2{
+    font-size: 32px;
+    font-weight: bold;
 }
-.screenShot.border{
-    border: 3px solid #00cdf9;
+.gamepage-header img{
+    width: 30%;
+    border: 1px solid #ffff;
 }
-.featureCollums{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 13rem;
+.gamepage-rightarrow{
+    position: absolute;
+    border: 1px solid #00cdf9;
+    top:-15%;
+    right:-1.5%;
 }
-.featureCollums.screenShoots{
-    margin-left: 20rem;
+.gamepage-leftarrow{
+    position:absolute;
+    border: 1px solid #00cdf9;
+    top:-15%;
+    left:-1.5%;
 }
 
 /* ------------------------------ */

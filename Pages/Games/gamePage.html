@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="/styles.css"> 
+    <title>bigasdev | Game</title>
+    <link rel="icon" href="/Art/eggscapeHeader.jpg">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class = "bannerBar">
+        <img src ="/Art/newbanner.png" alt="Logo" class="logo" id="logo">
+        <div class ="bannerRepeating">
+        </div>
+        <div style="text-align:center;" class="topBar">
+            <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=plastic&logo=twitter&logoColor=white" alt="" class="smallButtonBanner" id="twitterButton">
+            <button class="button" onclick="location.href='/index.html';" value="go to home">GAMES</button>
+            <button class="button" onclick="location.href='/Pages/projects.html';">PROJECTS</button>
+            <button class="button" onclick="location.href='/Pages/artgallery.html';">ART</button>
+            <button class="button" onclick="location.href='/Pages/aboutme.html';">ABOUT</button>
+            <img src="https://img.shields.io/badge/Github-FF0000?style=plastic&logo=github&logoColor=white" alt="" class="smallButtonBanner" id="githubButton">
+        </div>
+    </div>
+
+    <div class="gamePageBox">
+        <div class="gamepage-header">
+            <h2>Total Eggscape</h2>
+            <img src="/Art/eggscapeHeader.jpg">
+            <div class="gamepage-leftarrow">
+                <h1 onclick="location.href='/index.html';">&larr; Back</h1>
+            </div>
+            <div class="gamepage-rightarrow">
+                <h1>Trashed &rarr;</h1>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("twitterButton").addEventListener("click", () => {window.open("https://twitter.com/bigasdev");})
+        document.getElementById("githubButton").addEventListener("click", () => {window.open("https://github.com/bigasdev");})
+    </script>
+</body>
