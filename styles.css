@@ -253,10 +253,10 @@ li.italic{
     font-family: "Lato", sans-serif;
     margin: 15px auto 0 auto;
     margin-top: 3rem;
-    width: 49.6%;
+    width: 53rem;
     min-width: 200px;
     height: 40px;
-    padding: 5px;
+    padding-top: 5px;
     background: #00cdf9;
     justify-content: center;
 }
@@ -285,39 +285,33 @@ li.italic{
     cursor: pointer;
     border: 1px solid #00cdf9;
 }
-.gameBox.little{
-    margin: 0;
-    image-rendering: crisp-edges;
-    width: 15%;
-    height: 25%;
-    padding: 0px;
-    border: solid 1px transparent;
+.gamejam-grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.35rem;
 }
-.gameBox.little:hover{
+@media (max-width: 768px){
+    .littlebox{
+        width: 15rem;
+    }
+    .gamejam-grid{
+        justify-content: center;
+    }
+}
+.gamejam-grid-block{
+    width: 6.5rem;
+    height: 6.5rem;
+    padding: 0;
     border: 1px solid #00cdf9;
+    cursor: pointer;
+    overflow: hidden;
 }
-.gameBox.little.noBorder{
-    display: block;
-    width: 15%;
-    min-width: 185px;
-    
-    min-height: 185px;
+.gamejam-grid-block img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.gameBox.little.border{
-    display: block;
-    border: 1px solid #00cdf9;
-    grid-column: 1 / 3;
-    grid-row: 1 / 3;
-}
-.gameJamGrid{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap:1px;
-}
-@media (max-width: 450px){
-    
-    .gameJamGrid { grid-template-columns: repeat(1,1fr);}
-}
+
 
 /* ---------------------------------- */
 
