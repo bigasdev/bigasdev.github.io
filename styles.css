@@ -292,24 +292,22 @@ li.italic{
     border: 1px solid #00cdf9;
 }
 .gameBox.little.noBorder{
+    display: block;
     width: 15%;
     min-width: 185px;
+    
     min-height: 185px;
 }
 .gameBox.little.border{
+    display: block;
     border: 1px solid #00cdf9;
-    width: 25%;
-    min-width: 185px;
-    min-height: 185px;
-    height: auto;
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
 }
 .gameJamGrid{
     display: grid;
-    grid-template-columns: repeat(5, 180px);
-    margin-top: 1.65rem;
-    margin-left: -.27rem;
-    width: 100%;
-    height: auto;
+    grid-template-columns: repeat(5, 1fr);
+    gap:1px;
 }
 @media (max-width: 450px){
     
@@ -372,6 +370,7 @@ li.italic{
     border-radius: 15px;
     padding: 20px;
     width: 600px;
+    min-width: 200px;
 }
 
 .projectsCollum{
@@ -379,17 +378,19 @@ li.italic{
 }
 .projectBox{
     background-color: white;
-    width: 200px;
-    height: 200px;
+    width: 30%;
+    height: auto;
     border: solid 1px #00cdf9;
     filter:drop-shadow(0 0 0.95rem #000000b0);
 }
+
 .projectBox:hover{
     cursor:pointer;
     width: 205px;
     height: 205px;
     border: solid 2px #00cdf9;
 }
+
 .projectSidebox{
     justify-content: center;
     align-content: center;
@@ -432,6 +433,26 @@ li.italic{
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     width: 75px;
     height: 75px;
+}
+
+@media (max-width: 420px){
+    .projectsBox{
+        width: 350px;
+    }
+    .projectDatebar{
+        margin-left: 295px;
+    }
+    .projectSideboxText{
+        text-indent: 55px;
+    }
+    .projectSideboxBarText{
+        text-indent: 65px;
+        margin-top: 5px;
+    }
+    .projectSideboxBarText h3{
+        font-size: 1.2rem;
+    }
+    
 }
 
 /* ------------------------------ */
@@ -488,7 +509,8 @@ li.italic{
     margin: auto;
     border-radius: 15px;
     padding: 20px;
-    width: 500px;
+    width: 30%;
+    min-width: 350px;
 }
 
 .aboutMeProfilePic{
@@ -505,6 +527,22 @@ li.italic{
     display: grid;
     grid-template-columns: 1fr .4fr;
     gap: 1rem;
+}
+
+/* ------------------------------ */
+
+/* -- Art Page -- */
+
+.art-block-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.art-block-item{
+    margin: 2;
 }
 
 /* ------------------------------ */
