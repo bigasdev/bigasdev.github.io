@@ -176,6 +176,17 @@ li.italic{
     height:40px;
     padding: 3px;
 }
+.button.flat.large{
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px inset;
+    border-radius: 0px;
+    font-size: .7rem;
+    font-weight: bolder;
+    width:250px;
+    height:40px;
+    padding: 3px;
+}
 .button:hover{
     cursor: pointer;
     background-color:#94fdff;
@@ -436,9 +447,11 @@ li.italic{
     width: 100%;
     overflow: hidden;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 40% 60%;
 }
 .gamepage-description h2{
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 16px;
     padding: 0px;
@@ -454,24 +467,67 @@ li.italic{
     color: rgb(156, 155, 155);
 }
 .gamepage-embed{
+    position: relative;
     margin-top: 1rem;
     margin-left: 2rem;
-    width: 85%;
-    height: 100px;
-    border: 1px solid #00cdf9;
+    border-radius: 15px;
+    width: 90%;
+    height: 150px;
+    background: rgba(34, 42, 53, 0.404);
+    overflow: hidden;
 }
-.gamepage-embed:hover{
-    border:1px solid #fff;
-    transform: translate(1.2rem);
+.gamepage-embed-icons{
+    display: flex;
+    position: absolute;
+    background: rgba(40, 48, 65, 0.61);
+    left: 2%;
+    top:72%;
 }
-.gamepage-embed h2{
-    font-size: 24px;
-    color:#00cdf9;
+.gamepage-embed-icons div{
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
 }
-.gamepage-embed img{
-    width: 25%;
+.gamepage-embed-icons img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.gamepage-embed-buttons{
+    display: flex;
+    position: absolute;
+    top:80%;
+    left: 66%;
+}
+.gamepage-embed-banner{
+    margin-left: .5rem;
+    position: absolute;
+    top: -.5rem;
+    width: 100%;
+    grid-template-columns: 30% 50%;
+}
+.gamepage-embed-banner h2{
+    font-style: normal;
+    font-weight: 400;
+}
+.gamepage-embed-banner p{
+    top: 30%;
+    position: absolute;
+    left: 41.5%;
+}
+.gamepage-embed-banner div{
+    margin-top:0rem;
+    width: 175px;
+    height: 60px;
+    overflow: hidden;
+}
+.gamepage-embed-banner img{
+    width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.gamepage-embed button{
+    z-index: 5;
 }
 .gamepage-screenshots{
     margin-top: 3rem;
