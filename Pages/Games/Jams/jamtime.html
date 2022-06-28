@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="/styles.css"> 
+    <title>bigasdev | Game</title>
+    <link rel="icon" href="/Art/eggscapeHeader.jpg">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class = "bannerBar">
+        <img src ="/Art/newbanner.png" alt="Logo" class="logo" id="logo">
+        <div class ="bannerRepeating">
+        </div>
+        <div style="text-align:center;" class="topBar">
+            <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=plastic&logo=twitter&logoColor=white" alt="" class="smallButtonBanner" id="twitterButton">
+            <button class="button" onclick="location.href='/index.html';" value="go to home">GAMES</button>
+            <button class="button" onclick="location.href='/Pages/projects.html';">PROJECTS</button>
+            <button class="button" onclick="location.href='/Pages/artgallery.html';">ART</button>
+            <button class="button" onclick="location.href='/Pages/aboutme.html';">ABOUT</button>
+            <img src="https://img.shields.io/badge/Github-FF0000?style=plastic&logo=github&logoColor=white" alt="" class="smallButtonBanner" id="githubButton">
+        </div>
+    </div>
+
+    <div class="game-jam-page-box">
+        <div class="gamepage-icon jam">
+            <h2>Jam time</h2>
+            <img src="/Art/jamTime.png">
+        </div>
+
+        <div class="gamepage-icon-description jam">
+            <h2>2022, PC</h2>
+        </div>
+        
+        <div class="game-jam-embed">
+            <div class="game-jam-embed-game" id="game-embed">
+                <h3>Press anywhere to start</h3>
+                <iframe frameborder="0" src="https://itch.io/embed-upload/5551310?color=520d0d" allowfullscreen="" width="660" height="660"><a href="https://bigasdev.itch.io/jam-time">Play Jam Time! on itch.io</a></iframe>
+            </div>
+            <div class="game-jam-embed-sidebox">
+                <h3>Jam Ratings</h3>
+                <div class="game-jam-embed-rating-box">
+                    <div class="game-jam-award">
+                        <img src="/Art/Misc/award-solid.svg">
+                    </div>
+                    <h2>187 (Overall)</h2>
+                </div>
+                <div class="game-jam-embed-rating-box">
+                    <div class="game-jam-award">
+                        <img src="/Art/Misc/award-solid.svg">
+                    </div>
+                    <h2>187 (Overall)</h2>
+                </div>
+                <h3>How to play</h3>
+                <h1>Move</h1>
+                <p>WASD or arrow keys</p>
+                <h1>Attack</h1>
+                <p>E</p>
+                <h1>Disable Music</h1>
+                <p>M</p>
+                <h1>Disable Sfx</h1>
+                <p>N</p>
+                <h1>Pause</h1>
+                <p>Esc</p>
+            </div>
+        </div>
+
+        <div class="gamepage-description jam">
+            <div>
+                <button class="button jam" onclick="window.open('https://github.com/bigasdev/Return-to-the-jam')">Source code</button>
+                <button class="button jam" onclick="window.open('https://ldjam.com/events/ludum-dare/50/jam-time')">Submission page</button>
+                <button class="button jam" onclick="window.open('https://bigasdev.itch.io/jam-time')">Itch.io page</button>
+                <h2>This game was created for the Ludum Dare 50!</h2>
+                <p>You are a jam stuck in the ground, it's your mission to survive the best you can against the bacterias! Be careful with how you use your jam tho...*</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.getElementById("twitterButton").addEventListener("click", () => {window.open("https://twitter.com/bigasdev");})
+        document.getElementById("githubButton").addEventListener("click", () => {window.open("https://github.com/bigasdev");})
+
+        document.getElementById("game-embed").addEventListener("click", ()=>{
+            var game = document.querySelector('iframe');
+            var text = document.querySelector('.game-jam-embed h3').style.display = 'none';
+            console.log(game);
+            game.style.display = 'block';
+        })
+    </script>
+</body>

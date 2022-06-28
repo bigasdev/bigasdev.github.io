@@ -165,6 +165,33 @@ li.italic{
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     
 }
+.button.jam {
+    font-family: "Lato", sans-serif;
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+    border:0px;
+    justify-content: center;
+    align-items: center;
+    font-size: .7rem;
+    width: 150px;
+    height: 100px;
+    max-width: 175px;
+    max-height: 30px;
+    background-color:rgb(53, 64, 80);
+    border: 1px solid #9c9c9c;
+    color :rgb(0, 0, 0);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    
+}
+.button.jam{
+    color: #ffff;
+}
+.button.jam:hover{
+    cursor: pointer;
+    background-color:rgb(66, 78, 97);
+}
 .button.selected{
     background-color:#94fdff;
     border: 1px solid #ffff;
@@ -552,6 +579,121 @@ li.italic{
     border: 1px solid #ffff;
 }
 
+/* ------------------------------ */
+
+/* -- Game Jam Page -- */
+.game-jam-page-box{
+    background-color: #12151a;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 20px;
+    width: 85%;
+    min-width: 400px;
+    max-width: 1200px;
+}
+.game-jam-embed{
+    margin-left: 9rem;
+    margin-top: 2rem;
+    width: 75%;
+    height: 660px;
+    background-color: #000000;
+    border-right: .5px solid #00cdf9;
+    border-left: .5px solid #00cdf9;
+    border-top: .5px solid #00cdf9;
+    display: grid;
+    grid-template-columns: 72% 28%;
+    box-shadow: rgba(91, 156, 253, 0.4) 0px 5px, rgba(66, 208, 243, 0.3) 0px 10px, rgba(81, 83, 248, 0.2) 0px 15px, rgba(102, 66, 202, 0.1) 0px 20px, rgba(75, 46, 240, 0.05) 0px 25px;
+}
+.game-jam-embed-sidebox{
+    margin-left: 1rem;
+}
+.game-jam-embed-rating-box{
+    text-align: center;
+    width: 70%;
+    height: 25px;
+    border-radius: 5px;
+    margin-top: .5rem;
+    background-color: #555555;
+}
+.game-jam-award{
+    background-color: #ffffff00;
+    text-align: center;
+    border-radius: 4px;
+    margin-left: .3rem;
+    width: 22px;
+    height: 22px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.gamepage-description.jam{
+    margin-top: 2rem;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    grid-template-columns:none;
+}
+.game-jam-embed-rating-box h2{
+    position: block;
+    font-weight: 300;
+    font-style: normal;
+    color: #000000;
+}
+.game-jam-embed-rating-box img{
+    width: 15px;
+}
+.game-jam-embed h2{
+    padding: 0px;
+}
+.game-jam-embed p{
+    color: rgb(185, 185, 185);
+    font-size: 10px;
+}
+.game-jam-embed h3{
+    font-size: 24px;
+}
+.game-jam-embed h1{
+    font-size: 14px;
+}
+.game-jam-embed-game{
+    position: relative;
+    cursor: pointer;
+    border-right: 1px solid #1E2228;
+}
+
+.game-jam-embed-game h3{
+    position: absolute;
+    bottom: 14rem;
+    left: 30rem;
+}
+.game-jam-embed-game iframe{
+    display: none;
+}
+
+.gamepage-icon.jam{
+    margin-left: 25rem;
+    width: 35%;
+    height: 70px;
+    border: 1px solid #00cdf9;
+}
+.gamepage-icon.jam h2{
+    margin-top: 1.5rem;
+    margin-left: 9rem;
+    position: absolute;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 16px;
+    padding: 0px;
+    color: #00cdf9;
+}
+.gamepage-icon-description.jam{
+    text-align: center;
+    margin-left: 29rem;
+    width: 25%;
+    height: 30px;
+    background-color: #00cdf9;
+}
 /* ------------------------------ */
 
 /* -- Projects Page -- */
