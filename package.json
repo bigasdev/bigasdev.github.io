@@ -4,7 +4,7 @@
     "uniq": "^1.0.1"
   },
   "scripts": {
-    "deploy": "npm run build && gh-pages -d dist -b master",
+    "deploy": "npm run build && gh-pages -d . -b master",
     "dev": "webpack --config=Scripts/config/webpack.dev.js --watch",
     "build": "webpack --config=js/webpack.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
