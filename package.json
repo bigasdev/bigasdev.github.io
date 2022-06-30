@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@notionhq/client": "^1.0.4",
+    "uniq": "^1.0.1"
+  }
+}
