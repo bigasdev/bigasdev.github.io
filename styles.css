@@ -94,7 +94,9 @@ p.white.italic{
 }
 ul{
     list-style-type:square;
-    font-family: "Lato", sans-serif;
+    font-family: "Oswald", sans-serif;
+    font-style: italic;
+    font-weight: 200;
     font-size: 16px;
 }
 li.title{
@@ -390,7 +392,7 @@ li.italic{
     top:0px; right:0px; left:0px; bottom:0px;
 }
 .gamepage-icon{
-    margin-left: 14rem;
+    margin-left: 13rem;
     position: relative;
     width: 45%;
     height: 100px;
@@ -415,7 +417,7 @@ li.italic{
 }
 .gamepage-icon-description{
     text-align: center;
-    margin-left: 20rem;
+    margin-left: 18.5rem;
     width: 25%;
     height: 30px;
     background-color: #00cdf9;
@@ -538,9 +540,10 @@ li.italic{
     font-weight: 400;
 }
 .gamepage-embed-banner p{
+    font-size: 13px;
     top: 30%;
     position: absolute;
-    left: 41.5%;
+    left: 46.5%;
 }
 .gamepage-embed-banner div{
     margin-top:0rem;
