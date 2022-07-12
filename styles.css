@@ -581,6 +581,18 @@ li.italic{
 .gamepage-screenshot-block:hover{
     border: 1px solid #ffff;
 }
+.gamepage-aboutme{
+    text-align: center;
+}
+.gamepage-aboutme h1{
+    line-height: 22px;
+    font-size: 12px;
+    padding: 0px;
+    color:white;
+}
+.gamepage-aboutme h2{
+    font-size: 28px;
+}
 
 /* ------------------------------ */
 
