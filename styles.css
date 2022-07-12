@@ -486,6 +486,11 @@ li.italic{
     padding: 0px;
     color: #ffff;
 }
+.gamepage-description h3{
+    font-family: "Oswald", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
 .gamepage-description p{
     padding: 0px;
     font-size: 16px;
@@ -592,6 +597,19 @@ li.italic{
 }
 .gamepage-aboutme h2{
     font-size: 28px;
+}
+@media (max-width:768px){
+    .gamepage-icon{
+        right:8rem;
+        width:15rem;
+    }
+    .gamepage-icon-description{
+        margin-left: 10rem;   
+        height: 10%;
+    }
+    .gamepage-icon-description h2{
+        font-size: 12px;
+    }
 }
 
 /* ------------------------------ */
