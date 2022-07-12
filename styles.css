@@ -382,7 +382,7 @@ li.italic{
     margin-top: 3rem;
     padding: 20px;
     width: 55%;
-    min-width: 400px;
+    min-width: 350px;
     max-width: 800px;
 }
 .gamepage-header{
@@ -599,12 +599,36 @@ li.italic{
     font-size: 28px;
 }
 @media (max-width:768px){
+    .gamePageBox{
+        width: 5%;
+    }
+    .gamepage-embed p {
+        display: none;
+    }
+    .gamepage-embed-buttons{
+        margin-left: -6.75rem;
+    }
+    .gamepage-featured{
+        height: 200px;
+    }
+    .gamepage-description{
+        grid-template-columns: 60%50%;
+    }
+    .gamepage-description li{
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .gamepage-description iframe{
+        width: 100px;
+        height: 250px;
+    }
+
     .gamepage-icon{
-        right:8rem;
+        right:9.5rem;
         width:15rem;
     }
     .gamepage-icon-description{
-        margin-left: 10rem;   
+        margin-left: 9rem;   
         height: 10%;
     }
     .gamepage-icon-description h2{
