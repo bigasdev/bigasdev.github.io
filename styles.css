@@ -261,7 +261,7 @@ li.italic{
     position: relative;
     max-width: 3920px;
 }
-@media(max-width:768px){
+@media(max-width:1068px){
     .bannerBar .logo{
         margin-left: -5.35rem;
     }
