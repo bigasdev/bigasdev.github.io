@@ -18,6 +18,14 @@ a{
 a.orange{
     color: #00cdf9;
 }
+hr.pixel{
+    display:block;
+    background: url(/Art/Misc/h1.png) no-repeat top center;
+    image-rendering: pixelated;
+    background-size: contain;
+    height: 40px;
+    border: none;
+}
 hr.collum {
     display:block;
     border:0px;                                      
@@ -504,11 +512,11 @@ li.italic{
     margin-top: 2rem;
     width: 100%;
     overflow: hidden;
-    display: grid;
-    grid-template-columns: 40% 60%;
+    text-align: center;
 }
 .gamepage-description-bottom{
-    text-align: center;
+    display: grid;
+    grid-template-columns: 35%50%;
 }
 .gamepage-description-bottom li{
     font-style: normal;
