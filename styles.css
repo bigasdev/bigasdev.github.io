@@ -93,6 +93,7 @@ p.white.italic{
     color: rgb(204, 204, 204);
 }
 ul{
+    display: inline-block;
     list-style-type:square;
     font-family: "Oswald", sans-serif;
     font-style: italic;
@@ -125,12 +126,13 @@ li.italic{
     width: 10%;
 }
 .table-of-contents{
-    top: 17.5rem;
-    left: .5rem;
     position: fixed;
     background-color: #12151a;
     width: 125px;
     height: 120px;
+}
+.table-of-contents a{
+    color:#00cdf9;
 }
 .table-of-contents li{
     margin-left: -1rem;
@@ -409,6 +411,9 @@ li.italic{
     min-width: 350px;
     max-width: 800px;
 }
+.gamePageBox .table-of-contents{
+    margin-left: -9rem;
+}
 .gamepage-header{
     position: relative;
     text-align: center;
@@ -430,7 +435,7 @@ li.italic{
 }
 .gamepage-icon h2{
     margin-top: 2.5rem;
-    margin-left: 7rem;
+    margin-left: 9.5rem;
     position: absolute;
     font-size: 36px;
     font-style: normal;
@@ -665,6 +670,9 @@ li.italic{
     .gamepage-icon{
         right:9.5rem;
         width:15rem;
+    }
+    .gamepage-icon h2{
+        margin-left: 6.75rem;
     }
     .gamepage-icon-description{
         margin-left: 9rem;   
