@@ -635,7 +635,20 @@ li.italic{
     border: 1px solid #ffff;
 }
 .gamepage-aboutme{
+    margin-left: 5.5rem;
+    width: 75%;
+    border-radius: 15px;
+    background: rgba(40, 48, 65, 0.61);
     text-align: center;
+}
+.gamepage-aboutme-info{
+    text-align: left;
+}
+.gamepage-aboutme-info span{
+    color: #00cdf9;
+    font-family: "Lato", sans-serif;
+    line-height: 0;
+    display: block;
 }
 .gamepage-aboutme h1{
     line-height: 22px;
@@ -644,6 +657,10 @@ li.italic{
     color:white;
 }
 .gamepage-aboutme h2{
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    line-height: 16px;
+    padding: 0px;
     font-size: 28px;
 }
 @media (max-width:768px){
@@ -670,8 +687,11 @@ li.italic{
         font-weight: 500;
         font-size: 18px;
     }
+    .gamepage-description-bottom{
+        display:inline-block;
+    }
     .gamepage-description-bottom iframe{
-        width: 300px;
+        width: 350px;
         height: 250px;
     }
 
