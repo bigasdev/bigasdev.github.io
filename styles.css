@@ -134,6 +134,7 @@ li.italic{
     width: 10%;
 }
 .table-of-contents{
+    display:none;
     position: fixed;
     background-color: #12151a;
     width: 125px;
@@ -272,6 +273,11 @@ li.italic{
 @media(max-width:1068px){
     .bannerBar .logo{
         margin-left: -5.35rem;
+    }
+}
+@media(max-width:600px){
+    .bannerBar .logo{
+        margin-left: -10.35rem;
     }
 }
 .bannerRepeating{
