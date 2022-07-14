@@ -60,16 +60,46 @@
             </div>
         </div>
 
-        <hr class="pixel">
 
-        <div style="text-align:center;">
-            <div class ="gamepage-aboutme">
-                <h2>About my work on this project</h2>
-                <div class="gamepage-aboutme-info">
-                    <span>Roles:</span><h1>Lead Developer</h1>
-                    <span>Work Time:</span><h1>6 months</h1>
+        <div class ="gamepage-aboutme">
+            <h2>About my work on this project</h2>
+            <div class="gamepage-aboutme-info">
+                <span>Roles:</span><h1>Lead Developer</h1>
+                <span>Work Time:</span><h1>6 months</h1>
+                <span>Engine:</span><h1>Unity</h1>
+                <span>Language:</span><h1>C#</h1>
+            </div>
+            <h1>I worked as Lead Developer of Total Eggscape! Created the whole project on unity and handled every integration with the playstore + art & UI implementations. I helped with the game design as well, with the creation of the 2 bosses.</h1>
+            <div class="expandable-button">
+                <span class="expandable-icon">
+                    &harrw;
+                </span>
+                <div class="pre-content">
+                    <h2>Created an optimized level generator</h2>
                 </div>
-                <h1>I worked as Lead Developer of Total Eggscape! Created the whole project on unity and handled every integration with the playstore + art & UI implementations. I helped with the game design as well, with the creation of the 2 bosses.</h1>
+                <div class="content">
+                    <h2>Because of the android performance concern i had to create a pretty optimized system to generate the levels, obstacles and enemies for Total Eggscape! You see, the player would usually play the game for 20-30 minutes, and if he was good he would be able to play 10 minutes or more without dying</h2>
+                    <h2>If i just spawned a bunch of objects it would be a matter of time till even the strongest mobile phone crashed out.</h2>
+                    <h2>So i created a system that does a math based on the player distance and the last obstacle, if it's far from the screen i'll spawn the new objects + background piece on top of the player and remove the last ones, so we can only have 2 background and 5 objects pieces at a time.</h2>
+                    <img src="/Art/TotalEggscape/levelsSystem.gif">
+                </div>
+                <span class="expandable-plus">
+                    &#43;
+                </span>
+            </div>
+            <div class="expandable-button">
+                <span class="expandable-icon">
+                    &harrw;
+                </span>
+                <div class="pre-content">
+                    <h2>Created the Android playstore implementation</h2>
+                </div>
+                <div class="content">
+                    <h2>I created the full implementation on the playstore for Total Eggscape! Learned how to package the game and add the Unity Ads system linked with the android.</h2>
+                </div>
+                <span class="expandable-plus">
+                    &#43;
+                </span>
             </div>
         </div>
 
@@ -141,4 +171,5 @@
     </div>
 
     <script src="/js/mainScript.js"></script>
+    <script src="/js/expandable-buttons.js"></script>
 </body>

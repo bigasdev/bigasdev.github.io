@@ -154,6 +154,67 @@ li.italic{
     cursor: pointer;
     color: #00cdf9;
 }
+.expandable-button{
+    margin-top: .25rem;
+    position: relative;
+    width: 100%;
+    background-color: #00cdf9;
+    color: white;
+    height: 100%;
+    min-height: 25px;
+    margin-bottom: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.404) 0px 80px 60px -12px inset, rgba(0, 0, 0, 0.548) 0px 18px 36px -18px inset;
+}
+.expandable-button .pre-content{
+    text-align: left;
+}
+.expandable-button .pre-content h2{
+    font-weight: 100;
+    color: white;
+    padding-top: .3rem;
+    padding-left: 3.5rem;
+    font-size: 16px;
+}
+.expandable-button .content{
+    text-align: left;
+    background: rgb(40, 48, 65);
+    display: none;
+}
+.expandable-button .content img{
+    width: 100%;
+}
+.expandable-button .content h2{
+    font-family: "Oswald", sans-serif;
+    font-weight: 200;
+    line-height: 18px;
+    color: white;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+    padding-left: .5rem;
+    font-size: 16px;
+}
+.expandable-plus{
+    top: -.2rem;
+    right: 1rem;
+    position: absolute;
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+    font-weight: bolder;
+}
+.expandable-icon{
+    top: -.2rem;
+    left: 1rem;
+    position: absolute;
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+    font-weight: bolder;
+}
+.expandable-button:hover{
+    cursor: pointer;
+    background-color: #66d4ec;
+}
 
 .smallButton {
     position: relative;
@@ -646,20 +707,26 @@ li.italic{
     border-radius: 15px;
     background: rgba(40, 48, 65, 0.61);
     text-align: center;
+    border: 1px solid #00cdf9;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .gamepage-aboutme-info{
-    text-align: left;
+    background: rgba(20, 23, 27, 0.61);
+    text-align: center;
+    width: 100%;
 }
 .gamepage-aboutme-info span{
     color: #00cdf9;
     font-family: "Lato", sans-serif;
     line-height: 0;
-    display: block;
+    display: inline-block;
 }
 .gamepage-aboutme h1{
+    display: inline-block;
     line-height: 22px;
     font-size: 12px;
     padding: 0px;
+    padding-left: .3rem;
     color:white;
 }
 .gamepage-aboutme h2{
@@ -672,6 +739,9 @@ li.italic{
 @media (max-width:768px){
     .gamePageBox{
         width: 5%;
+    }
+    .gamepage-aboutme{
+        margin-left: 3rem;
     }
     .gamepage-embed p {
         display: none;

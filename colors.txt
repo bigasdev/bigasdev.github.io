@@ -1,0 +1,2 @@
+blue: #00cdf9
+black box: background: rgba(40, 48, 65, 0.61);
