@@ -10,9 +10,11 @@ function checkForScroll(){
         document.addEventListener("scroll", ()=>{
                 var y = window.scrollY;
                 if(y >= 180){
-                        toc.style.display = "block";
+                        toc.style.opacity = 1;
+                        toc.style.visibility = "visible";
                 }else{
-                        toc.style.display = "none";
+                        toc.style.opacity = 0;
+                        
                 }
         })
     }
