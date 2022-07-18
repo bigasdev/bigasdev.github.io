@@ -990,89 +990,44 @@ li.italic{
     margin: auto;
     border-radius: 15px;
     padding: 20px;
-    width: 600px;
+    width: 60%;
+    max-width: 600px;
+    justify-content: center;
     min-width: 200px;
 }
-
-.projectsCollum{
-    display: inline-grid;
+.projects-object{
+    position:relative;
+    width: 90%;
+    height: 100px;
+    border: 1px solid #00cdf9;
 }
-.projectBox{
-    background-color: white;
-    width: 30%;
+.projects-object .date-bar{
+    background-color: #00cdf9;
+    width: 4rem;
+    height: 100%;
+    position:absolute;
+    right: 0rem;
+    top: 0rem;
+    box-shadow: rgba(50, 50, 93, 0.404) 0px 80px 60px -12px inset, rgba(0, 0, 0, 0.548) 0px 18px 36px -18px inset;
+}
+.projects-object .image-thumbnail{
+    position: absolute;
+    top: -.5rem;
+    left: -.5rem;
+    width: 115px;
+    height: 115px;
+    display: flex;
+    text-align: center;
+    border: 1px solid #00cdf9;
+}
+.projects-object img{
+    width: 100%;
     height: auto;
-    border: solid 1px #00cdf9;
-    filter:drop-shadow(0 0 0.95rem #000000b0);
+    object-fit: cover;
+    overflow: hidden;
 }
 
-.projectBox:hover{
-    cursor:pointer;
-    width: 205px;
-    height: 205px;
-    border: solid 2px #00cdf9;
-}
-
-.projectSidebox{
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    border:solid 1px #00cdf9;
-    margin-left: 120px;
-    margin-top: -160px;
-    background-color: #12151a;
-    width:450px;
-    height:150px;
-}
-.projectSideboxText{
-    text-indent: 85px;
-    text-align: left;
-    margin-top: 50px;
-}
-.projectSideboxBar{
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    margin-left: 120px;
-    margin-top: -160px;
-    background-color: #00cdf9;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    width: 450px;
-    height: 50px;
-}
-.projectSideboxBarText{
-    text-indent: 85px;
-    text-align: left;
-    margin-top: -8px;
-}
-.projectDatebar{
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    margin-left: 495px;
-    margin-top: -85px;
-    background-color: #00cdf9;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    width: 75px;
-    height: 75px;
-}
-
-@media (max-width: 420px){
-    .projectsBox{
-        width: 350px;
-    }
-    .projectDatebar{
-        margin-left: 295px;
-    }
-    .projectSideboxText{
-        text-indent: 55px;
-    }
-    .projectSideboxBarText{
-        text-indent: 65px;
-        margin-top: 5px;
-    }
-    .projectSideboxBarText h3{
-        font-size: 1.2rem;
-    }
+@media (max-width: 768px){
     
 }
 
