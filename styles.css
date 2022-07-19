@@ -989,17 +989,70 @@ li.italic{
     background-color: #12151a;
     margin: auto;
     border-radius: 15px;
-    padding: 20px;
+    padding: 30px;
     width: 60%;
-    max-width: 600px;
+    max-width: 900px;
     justify-content: center;
     min-width: 200px;
 }
 .projects-object{
+    margin-left: 1.75rem;
     position:relative;
     width: 90%;
     height: 100px;
     border: 1px solid #00cdf9;
+}
+.projects-object:hover{
+    cursor: pointer;
+}
+.projects-object:hover .check-it{
+    width: 22.5rem;
+}
+.projects-object:hover .image-opacity{
+    opacity: .2;
+}
+.projects-object span.check-it{
+    text-align: left;
+    width: 6rem;
+    line-height: 16px;
+    position: absolute;
+    bottom: 0px;
+    left: 6.75rem;
+    transition: width .35s ease-in-out;
+}
+.projects-object h1{
+    margin-top: .5rem;
+    padding-left: 7rem;
+    text-align: left;
+    font-size: 22px;
+    line-height: 16px;
+}
+.projects-object h2{
+    margin-top: -1rem;
+    padding-left: 7rem;
+    text-align: left;
+    font-size: 16px;
+    line-height: 16px;
+}
+.projects-object .tools{
+    position:absolute;
+    top: 0;
+    right: 8rem;
+}
+.projects-object span{
+    text-align: left;
+    padding: 2px 4px 2px 4px;
+    color: #fff;
+    width: 3rem;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    box-shadow: rgba(50, 50, 93, 0.404) 0px 80px 60px -12px inset, rgba(0, 0, 0, 0.548) 0px 18px 36px -18px inset;
+}
+.projects-object span.blue{
+    background-color: #00cdf9;
+}
+.projects-object span.green{
+    background-color: #00f915;
 }
 .projects-object .date-bar{
     background-color: #00cdf9;
@@ -1010,6 +1063,14 @@ li.italic{
     top: 0rem;
     box-shadow: rgba(50, 50, 93, 0.404) 0px 80px 60px -12px inset, rgba(0, 0, 0, 0.548) 0px 18px 36px -18px inset;
 }
+.projects-object .date-bar h2{
+    margin-top: 1rem;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 0px;
+    line-height: 0px;
+    color: #fff;
+}
 .projects-object .image-thumbnail{
     position: absolute;
     top: -.5rem;
@@ -1019,6 +1080,21 @@ li.italic{
     display: flex;
     text-align: center;
     border: 1px solid #00cdf9;
+    box-shadow: rgba(0, 0, 0, 0.438) 0px 1px 2px, rgba(0, 0, 0, 0.493) 0px 2px 4px, rgba(0, 0, 0, 0.452) 0px 4px 8px, rgba(0, 0, 0, 0.384) 0px 8px 16px, rgba(0, 0, 0, 0.459) 0px 16px 32px, rgba(0, 0, 0, 0.493) 0px 32px 64px;
+}
+.projects-object .image-opacity{
+    opacity: 0;
+    background-color: #00cdf9;
+    position: absolute;
+    top: -.5rem;
+    left: -.5rem;
+    width: 115px;
+    height: 115px;
+    display: flex;
+    text-align: center;
+    transition: opacity .5s ease-in-out;
+    border: 1px solid #00cdf9;
+    box-shadow: rgba(0, 0, 0, 0.438) 0px 1px 2px, rgba(0, 0, 0, 0.493) 0px 2px 4px, rgba(0, 0, 0, 0.452) 0px 4px 8px, rgba(0, 0, 0, 0.384) 0px 8px 16px, rgba(0, 0, 0, 0.459) 0px 16px 32px, rgba(0, 0, 0, 0.493) 0px 32px 64px;
 }
 .projects-object img{
     width: 100%;
