@@ -1002,11 +1002,13 @@ li.italic{
     height: 100px;
     border: 1px solid #00cdf9;
 }
-.projects-object:hover{
-    cursor: pointer;
+.projects-object h2{
+    font-weight: 300;
+    font-style: normal;
 }
 .projects-object:hover .check-it{
     width: 22.5rem;
+    cursor: pointer;
 }
 .projects-object:hover .image-opacity{
     opacity: .2;
