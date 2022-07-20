@@ -333,6 +333,17 @@ li.italic{
     position: relative;
     max-width: 3920px;
 }
+.get-my-contact{
+    z-index: 999;
+    text-align: center;
+    top: 18rem;
+    background-color: #fff;
+    width: 100%;
+    height: 300px;
+    max-width: 200px;
+    position: absolute;
+    right: 1.5rem;
+}
 @media(max-width:1068px){
     .bannerBar .logo{
         margin-left: -5.35rem;
