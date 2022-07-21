@@ -20,4 +20,17 @@ function checkForScroll(){
     }
 }
 
+function checkForContact(){
+     var contactPanel = document.getElementById("contact")
+     if(contactPanel!=null){
+        var pin = document.getElementById('pin')
+        var buttons = document.querySelectorAll('.get-my-contact .sign').forEach(element =>{
+                element.addEventListener('mouseenter', ()=>{
+                        element.appendChild(pin)
+                })
+        })
+     }
+}
+
 checkForScroll();
+checkForContact()
