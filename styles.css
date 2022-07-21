@@ -336,13 +336,23 @@ li.italic{
 .get-my-contact{
     z-index: 999;
     text-align: center;
-    top: 18rem;
-    background-color: #fff;
+    top: 10rem; 
     width: 100%;
     height: 300px;
     max-width: 200px;
     position: absolute;
-    right: 1.5rem;
+    right: 10.5rem;
+}
+.get-my-contact .sign{
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    background-image: url(Art/woodenboard.png);
+    width: 200px;
+    height: 80px;
+}
+.get-my-contact .sign button{
+    margin-top: 2.3rem
 }
 @media(max-width:1068px){
     .bannerBar .logo{
