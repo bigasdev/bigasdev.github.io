@@ -352,6 +352,7 @@ li.italic{
     top: .5rem;
     right: -.5rem;
     z-index: 999;
+    display: none;
 }
 .get-my-contact .sign{
     position: relative;
