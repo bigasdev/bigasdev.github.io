@@ -20,7 +20,7 @@
     </div>
 
     <div class="get-my-contact" id="contact">
-        <button id="links-button">GET MY IMPORTANT LINKS</button>
+        <div class="mother" id="links-button"><p>GET MY IMPORTANT LINKS</p></div>
         <span class="pin" id="pin"><img src="/Art/pin.png"></span>
         <div class="sign"><button onclick="window.open('https://www.linkedin.com/in/gustavo-domingues-120bb11a4/')">Linkedin</button></div>
         <div class="sign"><button onclick="window.open('https://www.linkedin.com/in/gustavo-domingues-120bb11a4/')">Resume</button></div>
@@ -104,16 +104,15 @@
     
     <script>
         var button = document.getElementById('links-button')
-        console.log(button)
         button.onclick = () =>{
             var pin = document.getElementById('pin')
-            if(pin.style.display === 'none'){
+            if(pin.style.display === 'none' || pin.style.display === ''){
                 pin.style.display = 'block'
             }else{
                 pin.style.display = 'none'
             }
-            var buttons = document.querySelectorAll('.get-my-contact .sign').forEach(element =>{
-                if(element.style.display === 'none'){
+            document.querySelectorAll('.get-my-contact .sign').forEach(element =>{
+                if(element.style.display === 'none' || element.style.display === ''){
                     element.style.display = 'block'
                 }else{
                     element.style.display = 'none'

@@ -1,9 +1,4 @@
 
-document.getElementById("twitterButton").addEventListener("click", () => {window.open("https://twitter.com/bigasdev");})
-document.getElementById("githubButton").addEventListener("click", () => {
-        window.open("https://github.com/bigasdev");
-})
-
 function checkForScroll(){
     var toc = document.getElementById("toc")
     if(toc != null){
